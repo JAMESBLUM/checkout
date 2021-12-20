@@ -1,0 +1,9 @@
+#fullName::placeholder, #address::placeholder, #city::placeholder, #country::placeholder, #postalcode::placeholder{
+    background-repeat: no-repeat;
+    background-position: .5rem center;
+    background-size: 15px 15px;
+}
+#fullName::placeholder{background-image: url(../img/shippingIcon/user.png);}
+#address::placeholder{background-image: url(../img/shippingIcon/address.png);}
+#city::placeholder{background-image: url(../img/shippingIcon/city.png);}
+#postalcode::placeholder{background-image: url(../img/shippingIcon/postalCode.png);}

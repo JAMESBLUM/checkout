@@ -1,0 +1,7 @@
+#email::placeholder,#phone::placeholder{
+    background-repeat: no-repeat;
+    background-position: .5rem center;
+    background-size: 15px 15px;
+}
+#phone::placeholder{background-image: url(../img/contactIcons/phone.png);}
+#email::placeholder{background-image: url(../img/contactIcons/email.png);}

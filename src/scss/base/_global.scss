@@ -1,0 +1,43 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+}
+body{
+    font-size: 1.3rem;
+    font-family: $font;
+}
+.container{
+    width: 95%;
+    margin: 0 auto;
+    max-width: 120rem;
+    @include desktop{width: 60%;}
+}
+a{font-style: none;}
+img{width: 100%;}
+h1,h2,h3,h4,h5{margin: 0;}
+h1{font-size: 4rem;} h2{font-size: 3.5rem;}
+h3{font-size: 3rem;} h4{font-size: 2.5rem;}
+h5{font-size: 1.8rem;}  
+span{
+    color: $orange;
+    font-size: 1.7rem;
+    font-weight: $bold;
+    margin-right: 1rem;
+}
+.title{
+    padding:3rem 0;
+    @include tablet{
+        h4{font-size: 4rem;}
+    }
+}
+.subtitle{
+    padding: 3rem 0;
+    @include tablet{
+        h5{font-size: 3;}
+        padding: 0 0 3rem 0;
+    }
+}
+

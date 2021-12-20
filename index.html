@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="shourtcut icon" href="build/img/devchallenges.png">
+  <link rel="stylesheet" href="build/css/app.css">
+  <title>Checkout Page</title>
+</head>
+
+<body>
+  <div class="title container">
+    <h4>Checkout</h4>
+  </div>
+  <div class="productos-userInformation">
+    <div class="productos container">
+      <div class="producto">
+        <div class="picture">
+          <picture>
+            <img src="build/img/photo1.png" alt="green backpack">
+          </picture>
+        </div>
+        <div class="producto-descripcion">
+          <h5>Vintage Back</h5>
+          <p><span>$54.99</span> <del>$94.99</del></p>
+          <div class="producto-cantidad">
+            <button class="btn-cantidad" id="btn-quitar">-</button>
+            <input class="backbag" type="number" value="0" min="1" max="25">
+            <button class="btn-cantidad" id="btn-agregar">+</button>
+          </div>
+        </div>
+      </div>
+      <div class="producto">
+        <div class="picture">
+          <picture>
+            <img src="build/img/photo2.png" alt="green backpack">
+          </picture>
+        </div>
+        <div class="producto-descripcion">
+          <h5>Levi Shoes</h5>
+          <p><span>$74.99</span> <del>$124.99</del></p>
+          <div class="producto-cantidad">
+            <button class="btn-cantidad" id="btn-quitar2">-</button>
+            <input class="shoes" type="number" value="0" min="1" max="20">
+            <button class="btn-cantidad" id="btn-agregar2">+</button>
+          </div>
+        </div>
+      </div>
+      <div class="shipping-total container">
+        <div class="shipping">
+          <p>Shipping</p>
+          <p>$19</p>
+        </div>
+        <div class="total">
+          <p>Total</p>
+          <p>$148.99</p>
+        </div>
+      </div>
+    </div>
+    <div class="informationUser">
+      <section class="container">
+        <h5 class="subtitle ">Contact Information</h5>
+        <div class="formularioContacto">
+          <form action="">
+            <div class="campo">
+              <label for="email">E-mail</label>
+              <input type="email" id="email" placeholder="      Enter your email...">
+            </div>
+            <div class="campo">
+              <label for="phone">Phone</label>
+              <input type="tel" id="phone" placeholder="      Enter your phone...">
+            </div>
+          </form>
+        </div>
+      </section>
+      <Section class="container">
+        <h5 class="subtitle">Shipping address</h5>
+        <form action="">
+          <div class="campo">
+            <label for="fullName">Full name</label>
+            <input type="text" placeholder="      Rodney Cotton" id="fullName">
+          </div>
+          <div class="campo">
+            <label for="address">Address</label>
+            <input type="text" placeholder="      Your address.." id="address">
+          </div>
+          <div class="campo">
+            <label for="name">City</label>
+            <input type="text" placeholder="      Your city.." id="city">
+          </div>
+          <div class="twoColumns">
+            <div class="campo">
+              <label for="country">Country</label>
+              <select name="" id="country">
+                <option selected disabled>=== Select Your Country ====</option>
+                <option value="">México</option>
+                <option value="">Rusia</option>
+                <option value="">USA</option>
+                <option value="">Canada</option>
+                <option value="">India</option>
+              </select>
+            </div>
+            <div class="campo">
+              <label for="postalcode">Postal code</label>
+              <input type="text" placeholder="      Your postal code.." id="postalcode">
+            </div>
+          </div>
+          <div class="saveInformation">
+            <input type="checkbox" id="saveInformation-check">
+            <label for="saveInformation-check">Save this information for the next time</label>
+          </div>
+          <div class="derecha">
+            <input type="submit" value="Continue" class="btn">
+          </div>
+        </form>
+      </Section>
+    </div>
+  </div>
+  <footer class="createdBy container">
+    <p>Created by <span>Edgar RV</span> - devChallenges.io</p>
+  </footer>
+  <script src="build/js/bundle.min.js"></script>
+</body>
+
+</html>
